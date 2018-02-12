@@ -1,0 +1,49 @@
+## Openbox autostart.sh
+## ====================
+## When you login to your CrunchBang Openbox session, this autostart script 
+## will be executed to set-up your environment and launch any applications
+## you want to run at startup.
+##
+## Note*: some programs, such as 'nm-applet' are run via XDG autostart.
+## Run '/usr/lib/openbox/openbox-xdg-autostart --list' to list any
+## XDG autostarted programs.
+##
+## More information about this can be found at:
+## http://openbox.org/wiki/Help:Autostart
+##
+
+## GNOME PolicyKit and Keyring
+#eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
+## Set root window colour
+#hsetroot -solid "#2E3436" &
+
+## Enable power management
+#xfce4-power-manager &
+
+#sleep 2s &
+
+#compton &
+
+#sleep 2s &
+
+#disable screensaver
+xset s off
+
+~/.fehbg &
+
+tint2 &
+
+urxvtd -q -f -o
+
+#conky -q &
+
+#conky -q -c /home/steve/.conkyrc-batt &
+
+syndaemon -i 1.0 -K -R -t -d
+
+#thunar &
+
+#iceweasel &

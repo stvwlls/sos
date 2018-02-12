@@ -1,4 +1,4 @@
-#Steve's Operating System
+# Steve's Operating System
 
 Required Debian packages:
 

@@ -284,12 +284,30 @@
         <height>100%</height>
       </action>
     </keybind>
+    <keybind key="W-S-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>75%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
     <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
         <y>0</y>
         <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>3/4</x>
+        <y>0</y>
+        <width>25%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -309,7 +327,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
+    <keybind key="C-A-Up">
       <action name="NextWindow">
         <interactive>no</interactive>
         <linear>yes</linear>
@@ -330,7 +348,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
+    <keybind key="C-A-Down">
       <action name="PreviousWindow">
         <interactive>no</interactive>
         <linear>yes</linear>
@@ -351,6 +369,9 @@
           <action name="Unshade"/>
         </finalactions>
       </action>
+    </keybind>
+    <keybind key="W-F11">
+      <action name="ToggleFullscreen"/>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
@@ -389,9 +410,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Firefox</name>
+          <name>Chromium</name>
         </startupnotify>
-        <command>firefox</command>
+        <command>chromium</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -459,7 +480,7 @@
         <execute>urxvtc -e mutt</execute>
       </action>
     </keybind>
-    <keybind key="W-H">
+    <keybind key="W-P">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -480,7 +501,7 @@
     </keybind>
     <keybind key="C-Print">
       <action name="Execute">
-        <command>scrot -u '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/screenshots/ &amp; feh ~/screenshots/$f'</command>
+        <command>scrot -u '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mogrify -resize 1000x $f; mv $f ~/screenshots/ &amp; feh ~/screenshots/$f'</command>
       </action>
     </keybind>
     <keybind key="W-V">

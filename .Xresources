@@ -38,6 +38,8 @@ Xft.lcdfilter: lcddefault
 
 ! terminal -----------------------------------------------------------------------
 
+URxvt*iconFile: /home/steve/.icons/terminal.png
+
 !URxvt.font: xft:Terminus:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldFont: xft:Terminus:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldFont: xft:DejaVu Sans Mono:bold:pixelsize=16:antialias=true:hinting=true

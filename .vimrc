@@ -23,7 +23,7 @@ filetype indent plugin on
 " Enable syntax highlighting
 syntax on
 if exists('$DISPLAY')
-    set background=dark
+    set background=light
     colorscheme solarized
 else
     colorscheme desert

@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill '/home/steve/.themes/wallpapers/bw_grand_julian_by_mlsandahl.png' 
+'feh' '--bg-fill' '/home/steve/.themes/wallpapers/bw_grand_julian_by_mlsandahl.png' 

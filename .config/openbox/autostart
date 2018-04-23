@@ -12,38 +12,30 @@
 ## http://openbox.org/wiki/Help:Autostart
 ##
 
-## GNOME PolicyKit and Keyring
-#eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
-
-## Set root window colour
-#hsetroot -solid "#2E3436" &
-
-## Enable power management
-#xfce4-power-manager &
-
-#sleep 2s &
-
-#compton &
-
-#sleep 2s &
-
-#disable screensaver
-xset s off
-
 ~/.fehbg &
 
 tint2 &
 
 urxvtd -q -f -o
 
+xrandr --output eDP1 --brightness 0.8
+
+## GNOME PolicyKit and Keyring
+#eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+#export SSH_AUTH_SOCK
+
+## Set root window colour
+#hsetroot -solid "#2E3436" &
+
+## Enable power management
+#xfce4-power-manager &
+#sleep 2s &
+#compton &
+#sleep 2s &
+#disable screensaver
+#xset s off
 #conky -q &
-
 #conky -q -c /home/steve/.conkyrc-batt &
-
-syndaemon -i 1.0 -K -R -t -d
-
+#syndaemon -i 1.0 -K -R -t -d
 #thunar &
-
-#iceweasel &

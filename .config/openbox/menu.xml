@@ -393,15 +393,6 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Email Client">
-    <action name="Execute">
-      <command>claws-mail</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-        <wmclass>Claws</wmclass>
-      </startupnotify>
-    </action>
-  </item>
   <item label="Chat Client">
     <action name="Execute">
       <command>pidgin</command>
@@ -412,28 +403,9 @@
     </action>
   </item>
   <separator />
-  <item label="Stopmotion">
+  <item label="Volume control">
     <action name="Execute">
-      <command>stopmotion</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-        <wmclass>Stopmotion</wmclass>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Sound Editor">
-    <action name="Execute">
-      <command>audacity</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-        <wmclass>Audacity</wmclass>
-      </startupnotify>
-    </action>
-  </item>
-  <separator />
-  <item label="Audio Mixer">
-    <action name="Execute">
-      <command>pavucontrol</command>
+      <command>alsamixer</command>
     </action>
   </item>
   <separator />
@@ -445,7 +417,7 @@
   <item label="Shut down">
     <action name="Execute">
       <prompt>Are you sure you want to shut down?</prompt>
-      <command>systemctl poweroff</command>
+      <command>sudo shutdown -h now</command>
     </action>
   </item>
 </menu>

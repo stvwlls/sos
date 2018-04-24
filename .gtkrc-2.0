@@ -3,7 +3,8 @@
 
 gtk-theme-name="waldorf"
 #gtk-icon-theme-name="Crunchbang-Dark"
-gtk-icon-theme-name="Faenza-Darkest"
+#gtk-icon-theme-name="Faenza-Darkest"
+gtk-icon-theme-name="gnome"
 gtk-font-name="Sans 10"
 gtk-cursor-theme-name="DMZ-White"
 gtk-cursor-theme-size=0

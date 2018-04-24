@@ -17,14 +17,18 @@ Xft.lcdfilter: lcddefault
 !URxvt.boldFont: xft:Terminus:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldFont: xft:DejaVu Sans Mono:bold:pixelsize=16:antialias=true:hinting=true
 
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=22:antialias=true:hinting=true
-URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=22:antialias=true:hinting=true
+!URxvt.font: xft:DejaVu Sans Mono:pixelsize=22:antialias=true:hinting=true
+!URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=22:antialias=true:hinting=true
+
+URxvt.font:  xft:Inconsolata:pixelsize=26:antialias=true:hinting=true
+URxvt.boldFont: xft:Inconsolata:pixelsize=26:antialias=true:hinting=true
 
 URxvt.visualBell: false
 URxvt.scrollBar: false
-URxvt.scrollTtyOutput:   false
-URxvt.scrollWithBuffer:  true
-URxvt.scrollTtyKeypress: true
+URxvt.saveLines: 0
+!URxvt.scrollTtyOutput:   false
+!URxvt.scrollWithBuffer:  true
+!URxvt.scrollTtyKeypress: true
 URxvt.internalBorder: 10 
 
 ! drop in Solarized colorscheme for Xresources/Xdefaults

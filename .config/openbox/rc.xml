@@ -179,13 +179,13 @@
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
     <!--<keybind key="W-A-Left">-->
-    <keybind key="C-A-Left">
+    <keybind key="W-Prior">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Right">
+    <keybind key="W-Next">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>yes</wrap>
@@ -205,13 +205,13 @@
       </action>
     </keybind>
 -->
-    <keybind key="S-A-Left">
+    <keybind key="W-C-Prior">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="W-C-Next">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
@@ -266,11 +266,13 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
+    <!--
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
+    -->
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -346,7 +348,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
+    <keybind key="W-space">
       <action name="NextWindow">
         <interactive>no</interactive>
         <linear>yes</linear>
@@ -367,7 +369,8 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
+    <!--
+    <keybind key="W-A-Prior">
       <action name="PreviousWindow">
         <interactive>no</interactive>
         <linear>yes</linear>
@@ -378,6 +381,7 @@
         </finalactions>
       </action>
     </keybind>
+    -->
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>

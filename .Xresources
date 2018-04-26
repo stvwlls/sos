@@ -25,10 +25,10 @@ URxvt.boldFont: xft:Inconsolata:pixelsize=26:antialias=true:hinting=true
 
 URxvt.visualBell: false
 URxvt.scrollBar: false
-URxvt.saveLines: 0
-!URxvt.scrollTtyOutput:   false
-!URxvt.scrollWithBuffer:  true
-!URxvt.scrollTtyKeypress: true
+!URxvt.saveLines: 200
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
 URxvt.internalBorder: 10 
 
 ! drop in Solarized colorscheme for Xresources/Xdefaults

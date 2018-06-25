@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ibex Style Guide</title>
+    <link rel="stylesheet" href="css/build/styles.css">
+    <link rel="stylesheet" href="css/build/styleguide.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <nav class="sg-nav">
+      <label for="menu" class="menu-button">Menu</label>
+      <input type="checkbox" id="menu">
+      <div class="sg-menu">
+        <a href="#welcome">Welcome</a>
+        <a href="#files">File Structure</a>
+        <a href="#colors">Colors</a>
+        <a href="#headings">Heading Tags</a>
+        <a href="#paragraph">Paragraphs &amp; Lists</a>
+        <a href="#links">Links &amp; Buttons</a>
+        <a href="#images">Images</a>
+        <a href="#grid">Grid</a>
+        <a href="#forms">Forms</a>
+      </div>
+    </nav>
+
+    <header class="sg-type grid wrap grid--center">
+      <div id="welcome" class="sg-info grid__cell">
+        <h1>Welcome to Ibex</h1>
+        <h2>What is Ibex?</h2>
+        <p>Ibex is a minimal frontend SCSS framework for creating websites.</p>
+        <p><strong>This Style Guide illustrates the scope of what Ibex sets out to do,
+          which&nbsp;is:</strong></p>
+        <p>
+          <ul>
+            <li>Provide a quick and easy way for an iBec Developer to generate
+              basic page layouts.</li>
+            <li>Make the Typography process easier for multiple devices using
+              fluid type.</li>
+            <li>Provide basic styles for the most common elements.</li>
+            <li>Get out of your way so you can do great work.</li>
+          </ul>
+        </p>
+        <p>This Style Guide also serves as a style guide, which will update itself as you code. The only manual step you need to take is to update the color swatches for your website's colors.</p>
+        <h4>Why should I use this? I like doing everything on my own.</h4>
+        <p>We all do, the problem comes in when everyone has their own custom
+          methods for doing things that others may not understand.
+        Since you work with other developers we need a common basis that we all
+        work from. When someone starts a new project or inherits an old one,
+        the structure of the project and it's foundational CSS should be
+        familiar to everyone.</p>
+        <p>The file structure of Ibex is one of the most important parts, and
+          it's flexible. You can make your own additions to it, you can use or
+          not use some of the boilerplate features - it's up to you.</p>
+      </div>
+    </header>
+
+    <section id="files" class="sg-type grid wrap">
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>File Structure:</h1>
+          <p>The file structure of Ibex is set up using a modular CSS approach. There is a main <code>styles.scss</code> file that grabs <code>_index.scss</code>
+            files from each of the subdirectories. This enables you to add new components on the fly without having to stop and start Gulp.</p>
+          <p>Below is the base directory &amp; file structure for Ibex:</p>
+          <code>/abstracts<br>
+              &nbsp; - _index.scss<br>
+              &nbsp; - _mixins.scss<br>
+              &nbsp; - _variables.scss<br><br>
+            /base<br>
+              &nbsp; - _index.scss<br>
+              &nbsp; - _reset.scss<br>
+              &nbsp; - _typography.scss<br><br>
+            /components <br>
+              &nbsp; - _buttons.scss<br>
+              &nbsp; - _forms.scss<br>
+              &nbsp; - _images.scss<br>
+              &nbsp; - _index.scss<br>
+              &nbsp; - _tables.scss<br><br>
+            /layout<br>
+              &nbsp; - _footer.scss<br>
+              &nbsp; - _grid.scss<br>
+              &nbsp; - _header.scss<br>
+              &nbsp; - _index.scss<br>
+              &nbsp; - _navigation.scss<br><br>
+            /pages <strong>-- Add any new pages you need to style specifically here.</strong><br>
+              &nbsp; - _home.scss<br>
+              &nbsp; - _index.scss<br><br>
+            /vendors <strong>-- For any CSS from JS plugins.</strong><br>
+              &nbsp; - _index.scss<br><br>
+            styles.scss</code>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="colors" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Colors:</h1>
+          <p>These are the colors that are defined in <code>_variables.scss</code> file. They are up to you to define or change, depending on the needs of your project.</p>
+        </div>
+        <div class="grid grid--small-grid wrap">
+          <div class="grid__cell sg-color-swatch" style="background: #ff0846; color: #fff">
+            Red: #ff0846
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #49ff8d">
+            Green: #49ff8d
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #05e6ff">
+            Blue: #05e6ff
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #eb1ccd">
+            Purple: #eb1ccd
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #ffd826">
+            Yellow: #ffd826
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #000; color: #fff">
+            Black: #000
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #3f3f3f; color: #fff">
+            Dark Gray: #3f3f3f
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #7f7f7f; color: #fff">
+            Gray: #7f7f7f
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #bfbfbf;">
+            Light Gray: #bfbfbf
+          </div>
+
+          <div class="grid__cell sg-color-swatch" style="background: #fff; border: 1px solid #bfbfbf">
+            White: #fff
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="headings" class="sg-type grid wrap">
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Heading Tags:</h1>
+          <p>The heading tags use a fluid type system so that there is a minimum size and a maximum size that adjusts itself automatically
+            depending on the width of the screen.
+        </div>
+        <h1>This is an H1 Tag</h1>
+        <h2>This is an H2 Tag</h2>
+        <h3>This is an H3 Tag</h3>
+        <h4>This is an H4 Tag</h4>
+        <h5>This is an H5 Tag</h5>
+        <h6>This is an H6 Tag</h6>
+      </div>
+    </section>
+
+    <section id="paragraph" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Paragraphs &amp; Lists:</h1>
+          <p>These are examples of paragraph and lists, they also use the same fluid type system as the heading tags.
+        </div>
+        <p><strong>This is a paragraph:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu tellus accumsan, eleifend magna id, pulvinar justo. Integer ultrices iaculis purus quis iaculis.</p>
+        <p>Fusce ut nisi ultricies libero commodo vulputate quis ut sapien. Suspendisse interdum ex pharetra purus aliquet, dignissim varius ante rutrum.</p>
+        <h2>Unordered lists</h2>
+        <ul>
+          <li>Donec dictum faucibus lacus et egestas.</li>
+          <li>Donec sit amet maximus nulla, nec viverra diam.</li>
+        </ul>
+        <h2>Ordered lists</h2>
+        <ol>
+          <li>Donec bibendum felis maximus, lobortis purus non, dignissim quam.</li>
+          <li>Donec ligula erat, fringilla quis nulla sit amet</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="links" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Links &amp; Buttons:</h1>
+        </div>
+        <p><a href="#">I'm a link</a></p>
+        <p><a href="#" class="button">I'm, like a big wide button</a></p>
+        <p>Hey! <a href="#" class="button button--inline">I'm an inline button</a></p>
+      </div>
+    </section>
+
+    <section id="images" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Images:</h1>
+        </div>
+        <p><img src="http://www.fillmurray.com/600/600" width="600" height="600" /> This is just a big image</p>
+        <p>This is some text and some images. For relaxing times, make it Suntory time. <img src="http://www.fillmurray.com/300/300" width="300" height="300" class="align-left"/>Mauris condimentum mi ut nibh consectetur interdum. Aliquam erat volutpat. Praesent ac dolor tincidunt, maximus sem non, ullamcorper elit. Fusce mattis suscipit dui, quis pharetra urna sollicitudin vel. Donec non ullamcorper nisl. Donec pellentesque ut odio non sodales. Aliquam eleifend, velit et malesuada pharetra, nibh ipsum suscipit neque, a laoreet orci dolor eget orci.
+        <img src="http://www.fillmurray.com/200/250" width="200" height="300" class="align-right"/>
+Nulla sit amet elit at nulla iaculis egestas ultricies eu lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, odio non faucibus dictum, nisl massa vulputate diam, id vestibulum tellus nulla vitae lectus. Aenean blandit sem id tempor pellentesque. Praesent viverra lacus at feugiat vulputate. In sed lacinia dolor, ut auctor nunc. Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat. Donec finibus magna a ex consectetur malesuada. Etiam eget pharetra ipsum.
+        </p>
+      </div>
+    </section>
+
+    <section id="grid" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Grid:</h1>
+        </div>
+
+        <div class="grid grid--small-grid wrap">
+          <div>
+            <img src="http://www.fillmurray.com/150/150" width="150" height="150"/>
+          </div>
+
+          <div class="grid__cell">
+            Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat.
+          </div>
+          <div>
+            <img src="http://www.fillmurray.com/150/150" width="150" height="150"/>
+          </div>
+          <div class="grid__cell">
+            Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat.
+          </div>
+          <div>
+            <img src="http://www.fillmurray.com/150/150" width="150" height="150"/>
+          </div>
+          <div class="grid__cell">
+            Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat.
+          </div>
+          <div>
+            <img src="http://www.fillmurray.com/150/150" width="150" height="150"/>
+          </div>
+          <div class="grid__cell">
+            Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat.
+          </div>
+          <div>
+            <img src="http://www.fillmurray.com/150/150" width="150" height="150"/>
+          </div>
+          <div class="grid__cell">
+            Nam imperdiet neque sit amet sem elementum, ac fermentum erat feugiat.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="forms" class="sg-type grid wrap">
+
+      <div class="grid__cell">
+        <div class="sg-info">
+          <h1>Forms:</h1>
+          <form>
+          <label for="text">Text Input</label>
+          <input type="text" id="text" placeholder="Enter some text">
+
+          <label for="search">Search Input</label>
+          <input type="search" id="search">
+
+          <label for="url">URL Input</label>
+          <input type="url" id="url">
+
+          <label for="tel">Telephone Input</label>
+          <input type="tel" id="tel">
+
+          <label for="number">Number Input</label>
+          <input type="number" id="number">
+
+          <label for="range">Range Input</label>
+          <input type="range" id="range">
+
+          <label for="month">Month Input</label>
+          <input type="month" id="month">
+
+          <label for="week">Week Input</label>
+          <input type="week" id="week">
+
+          <label for="time">Time Input</label>
+          <input type="time" id="time">
+
+          <label for="datetime-local">Datetime Local Input</label>
+          <input type="datetime-local" id="datetime-local">
+
+          <label for="color">Color Input</label>
+          <input type="color" id="color">
+
+          <label for="email">Email Input</label>
+          <input type="email" id="email" placeholder="ex: matt@ibeccreative.com">
+
+          <label for="password">Password Input</label>
+          <input type="password" id="password" placeholder="Enter your password"required>
+
+          <label>Radio Input</label>
+          <label><input type="radio" name="q" value="y" checked> Yes</label>
+          <label><input type="radio" name="q" value="n"> No</label>
+          <label><input type="radio" name="q" value="m"> Maybe</label>
+
+          <label for="select">Select</label>
+          <select name="select" id="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+
+          <label for="text">Text Input</label>
+          <textarea></textarea>
+
+          <input type="submit" class="button">
+        </form>
+
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>

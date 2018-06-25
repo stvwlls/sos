@@ -1,0 +1,118 @@
+//
+// SCSS Mixins
+// Author: iBec Creative;
+// Updated: 6/9/2016, by: Nate Blanchette
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+//Font Fix
+@mixin font-fix{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Responsive breakpoint manager
+// @access public
+// @param {String} $breakpoint - Breakpoint
+// @requires $breakpoints
+// Pulled from: https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin fluid-type($sm-font,$lg-font,$sm-bp: $bp-x-small,$lg-bp: $bp-huge) {
+  font-size: $sm-font;
+
+  @media screen and (min-width: $sm-bp) {
+    font-size: calc(#{$sm-font} + #{(strip-unit($lg-font) - strip-unit($sm-font))} * ((100vw - #{$sm-bp}) / #{(strip-unit($lg-bp) - strip-unit($sm-bp))}));
+  }
+
+  @media screen and (min-width: $lg-bp) {
+    font-size: $lg-font;
+  }
+}
+
+
+@mixin fluid-line-height($sm-height,$lg-height,$sm-bp: $bp-x-small,$lg-bp: $bp-huge) {
+  line-height: $sm-height;
+
+  @media screen and (min-width: $sm-bp) {
+    line-height: calc(#{$sm-height} + #{(strip-unit($lg-height) - strip-unit($sm-height))} * ((100vw - #{$sm-bp}) / #{(strip-unit($lg-bp) - strip-unit($sm-bp))}));
+  }
+
+  @media screen and (min-width: $lg-bp) {
+    line-height: $lg-height;
+  }
+
+}
+
+@mixin fluid-vertical-margin($sm-height,$lg-height,$sm-bp: $bp-x-small,$lg-bp: $bp-huge) {
+  margin: $sm-height 0;
+
+  @media screen and (min-width: $sm-bp) {
+    margin-top: calc(#{$sm-height} + #{(strip-unit($lg-height) - strip-unit($sm-height))} * ((100vw - #{$sm-bp}) / #{(strip-unit($lg-bp) - strip-unit($sm-bp))}));
+    margin-bottom: calc(#{$sm-height} + #{(strip-unit($lg-height) - strip-unit($sm-height))} * ((100vw - #{$sm-bp}) / #{(strip-unit($lg-bp) - strip-unit($sm-bp))}));
+  }
+
+  @media screen and (min-width: $lg-bp) {
+    margin: $lg-height 0;
+  }
+}
+
+//usage: @include respond-to('medium') {
+//    color: blue;
+//  }
+
+/// Helper to clear inner floats
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

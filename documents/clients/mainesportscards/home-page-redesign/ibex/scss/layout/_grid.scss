@@ -1,0 +1,84 @@
+.grid {
+
+  @include respond-to('medium') {
+    display: flex;
+  }
+
+  &--small-grid {
+    display: flex;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &__cell {
+    flex: 1;
+    margin: 0 1rem;
+    padding: .5rem;
+
+    .grid {
+      margin: 0 -1rem;
+    }
+  }
+
+  &--flexCells > .grid__cell {
+    display: flex;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--center {
+    align-items: center;
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &-cell--top {
+    align-self: flex-start;
+  }
+
+  &-cell--bottom {
+    align-self: flex-end;
+  }
+
+  &-cell--center {
+    align-self: center;
+  }
+
+  &-cell--autoSize {
+    flex: none;
+  }
+}
+
+/* Flexbox sticky-footer
+   Apply this to the body and your main content block. content and footer elements should be immediate children of body*/
+
+// body {
+//   display: flex;
+//   min-height: 100vh;
+//   flex-direction: column;
+// }
+//
+// main {
+//   flex: 1;
+// }
+
+
+.bordered {
+  @include respond-to('medium') {
+    border-left: 1px solid $light-gray;
+
+    &:first-child {
+      border: 0;
+    }
+  }
+}

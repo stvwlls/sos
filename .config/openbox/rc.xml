@@ -552,6 +552,42 @@
         <execute>urxvtc -e alsamixer</execute>
       </action>
     </keybind>
+    <keybind key="XF86Sleep">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Sleep</name>
+        </startupnotify>
+        <execute>sudo zzz</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>BrightnessUp</name>
+        </startupnotify>
+        <execute>xbacklight -inc 5</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>BrightnessDown</name>
+        </startupnotify>
+        <execute>xbacklight -dec 5</execute>
+      </action>
+    </keybind>
+    <keybind key="C-XF86MonBrightnessUp">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>BrightnessFull</name>
+        </startupnotify>
+        <execute>xbacklight -set 100</execute>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -1009,7 +1045,7 @@
 -->
   <application name="Navigator">
     <decor>no</decor>
-    <!--<maximized>true</maximized>-->
+    <maximized>true</maximized>
   </application>
   <application name="urxvt">
     <decor>no</decor>

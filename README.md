@@ -13,6 +13,14 @@ Services
 sudo ln -s /etc/sv/acpid /var/service/
 ```
 
+Enable dhcpcd service
+```
+sudo ln -s /etc/sv/dhcpcd /var/service/
+```
+
+Enable dbus service
+ln -s /etc/sv/dbus /var/service/dbus
+
 <!--
 
 Debian packages:

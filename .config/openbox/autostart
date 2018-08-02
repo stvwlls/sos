@@ -20,6 +20,8 @@ urxvtd -q -f -o
 
 xrandr --output eDP1 --brightness 0.8
 
+alsactl --file ~/.config/asound.state restore
+
 ## GNOME PolicyKit and Keyring
 #eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 #eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)

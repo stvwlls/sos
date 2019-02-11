@@ -447,15 +447,7 @@
         <command>urxvtc -icon ~/.icons/urxvt/terminal.png</command>
       </action>
     </keybind>
-    <keybind key="W-n">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Terminal</name>
-        </startupnotify>
-        <command>urxvtc -icon ~/.icons/urxvt/terminal.png -e sftp ibec@50.75.53.178</command>
-      </action>
-    </keybind>
+<!--
     <keybind key="W-F">
       <action name="Execute">
         <startupnotify>
@@ -465,7 +457,6 @@
         <command>thunar</command>
       </action>
     </keybind>
-<!--
     <keybind key="A-F3">
       <action name="Execute">
         <startupnotify>
@@ -482,7 +473,7 @@
           <enabled>true</enabled>
           <name>Launcher</name>
         </startupnotify>
-        <command>gmrun</command>
+        <command>rofi -show run</command>
       </action>
     </keybind>
     <keybind key="W-C">
@@ -955,7 +946,7 @@
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
 
-  <application name="the window's _OB_APP_NAME property (see obxprop)"
+  <application name="the window's _OB_APP_NAME PROPErty (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
           groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
          groupclass="the window's _OB_APP_GROUP_CLASS property (see obxprop)"
@@ -1043,6 +1034,14 @@
 
   # end of the example
 -->
+  <application name="Navigator">
+    <decor>no</decor>
+    <maximized>true</maximized>
+  </application>
+  <application title="Mozilla Thunderbird">
+    <decor>no</decor>
+    <maximized>true</maximized>
+  </application>
   <application name="Navigator">
     <decor>no</decor>
     <maximized>true</maximized>

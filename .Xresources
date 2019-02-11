@@ -69,23 +69,23 @@ URxvt.internalBorder: 10
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-!!DARK
-!URxvt.background:            S_base03
-!URxvt.foreground:            S_base00
-!URxvt.fading:                40
-!URxvt.fadeColor:             S_base03
-!URxvt.cursorColor:           S_base1
-!URxvt.pointerColorBackground:S_base01
-!URxvt.pointerColorForeground:S_base1
-
-!LIGHT
-URxvt.background:            S_base3
-URxvt.foreground:            S_base0
+!DARK
+URxvt.background:            S_base03
+URxvt.foreground:            S_base00
 URxvt.fading:                40
-URxvt.fadeColor:             S_base3
-URxvt.cursorColor:           S_base01
-URxvt.pointerColorBackground:S_base1
-URxvt.pointerColorForeground:S_base01
+URxvt.fadeColor:             S_base03
+URxvt.cursorColor:           S_base1
+URxvt.pointerColorBackground:S_base01
+URxvt.pointerColorForeground:S_base1
+
+!!LIGHT
+!URxvt.background:            S_base3
+!URxvt.foreground:            S_base0
+!URxvt.fading:                40
+!URxvt.fadeColor:             S_base3
+!URxvt.cursorColor:           S_base01
+!URxvt.pointerColorBackground:S_base1
+!URxvt.pointerColorForeground:S_base01
 
 !! black dark/light
 URxvt.color0:                S_base02

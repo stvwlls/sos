@@ -2,9 +2,7 @@
 
 ##Void packages:
 
-xorg-minimal xrdb xsetroot gnome-icon-theme xf86-video-intel gtk-engine-murrine openbox tint2 alsa-utils firefox rxvt-unicode vim-x11 pidgin moc gsimplecal gmrun feh mutt galculator lxrandr keychain unzip ufw
-
-add fonts: dejavu, insonsolata
+xorg-minimal xrdb xsetroot gnome-icon-theme xf86-video-intel gtk-engine-murrine openbox tint2 alsa-utils firefox rxvt-unicode vim-x11 pidgin moc rofi feh galculator lxrandr keychain unzip ufw flameshot dejavu-fonts-ttf git wget gnupg
 
 ##Void post-installation
 

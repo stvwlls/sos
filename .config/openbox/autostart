@@ -18,9 +18,12 @@ tint2 &
 
 urxvtd -q -f -o
 
-xrandr --output eDP1 --brightness 0.8
+#xrandr --output eDP1 --brightness 0.8
 
 alsactl --file ~/.config/asound.state restore
+
+# Disable power saving screen blanking
+xset dpms 0 0 0 && xset s noblank  && xset s off
 
 ## GNOME PolicyKit and Keyring
 #eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &

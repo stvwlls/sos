@@ -445,6 +445,7 @@
           <name>Terminal</name>
         </startupnotify>
         <command>urxvtc -icon ~/.icons/urxvt/terminal.png</command>
+        <!--<command>urxvtc -icon ~/.icons/urxvt/terminal.png</command>-->
       </action>
     </keybind>
 <!--
@@ -686,6 +687,7 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
+      <!--
       <mousebind button="Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -693,6 +695,7 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
+      -->
     </context>
     <context name="Top">
       <mousebind button="Left" action="Drag">

@@ -1,0 +1,53 @@
+pane	local	0	:scratch	1	:*	0	:/home/steve/downloads	1	bash	:
+pane	local	1	:scratch2	0	:	0	:/home/steve/downloads	1	bash	:
+pane	local	2	:xbps	0	:	0	:/home/steve	1	bash	:
+pane	local	3	:clients	0	:-	0	:/home/steve	1	bash	:
+pane	local	4	:clients2	0	:	0	:/home/steve	1	bash	:
+pane	local	5	:nas	0	:	0	:/home/steve/downloads	1	bash	:
+pane	local	6	:nas2	0	:	0	:/home/steve	1	bash	:
+pane	razz	0	:server-side	1	:*	0	:/home/steve/clients/thebreakexchange/socket-io-darksky/socket-io-server	1	bash	:
+pane	razz	1	:client-side	0	:	0	:/home/steve/clients/thebreakexchange/socket-io-darksky/socket-io-client	1	bash	:
+pane	razz	2	:server	0	:	0	:/home/steve/clients/thebreakexchange/socket-io-darksky/socket-io-server	1	bash	:
+pane	razz	3	:react	0	:	0	:/home/steve/clients/thebreakexchange/socket-io-darksky/socket-io-client	1	bash	:
+pane	razz	4	:db	0	:	0	:/home/steve	1	bash	:
+pane	razz	5	:root	0	:-	0	:/home/steve	1	bash	:
+pane	razz	6	:robCode	0	:	0	:/home/steve/clients/thebreakexchange/abandoned/20190701/react-sockets/src/components	1	bash	:
+pane	remote	0	:dev	0	:-	0	:/home/steve	1	bash	:
+pane	remote	1	:dev2	1	:*	0	:/home/steve	1	bash	:
+pane	remote	2	:dev3	0	:	0	:/home/steve	1	bash	:
+pane	remote	3	:spock	0	:	0	:/home/steve	1	bash	:
+pane	remote	4	:bowie	0	:	0	:/home/steve	1	bash	:
+pane	remote	5	:linode	0	:	0	:/home/steve	1	bash	:
+pane	remote	6	:linode2	0	:	0	:/home/steve	1	bash	:
+pane	remote	7	:linodedb	0	:	0	:/home/steve	1	bash	:
+pane	remote	8	:root	0	:	0	:/home/steve	1	bash	:
+pane	remote	9	:root2	0	:	0	:/home/steve	1	bash	:
+pane	remote	10	:grunt	0	:	0	:/home/steve	1	bash	:
+pane	remote	11	:live	0	:	0	:/home/steve	1	bash	:
+window	local	0	1	:*	c8fe,147x37,0,0,1
+window	local	1	0	:	c8ff,147x37,0,0,2
+window	local	2	0	:	c900,147x37,0,0,3
+window	local	3	0	:-	c901,147x37,0,0,4
+window	local	4	0	:	c902,147x37,0,0,5
+window	local	5	0	:	c903,147x37,0,0,6
+window	local	6	0	:	c904,147x37,0,0,7
+window	razz	0	1	:*	c905,147x37,0,0,8
+window	razz	1	0	:	c906,147x37,0,0,9
+window	razz	2	0	:	64af,147x37,0,0,10
+window	razz	3	0	:	64b0,147x37,0,0,11
+window	razz	4	0	:	64b1,147x37,0,0,12
+window	razz	5	0	:-	64b2,147x37,0,0,13
+window	razz	6	0	:	64b3,147x37,0,0,14
+window	remote	0	0	:-	64b4,147x37,0,0,15
+window	remote	1	1	:*	64b5,147x37,0,0,16
+window	remote	2	0	:	64b6,147x37,0,0,17
+window	remote	3	0	:	64b7,147x37,0,0,18
+window	remote	4	0	:	64b8,147x37,0,0,19
+window	remote	5	0	:	e4af,147x37,0,0,20
+window	remote	6	0	:	e4b0,147x37,0,0,21
+window	remote	7	0	:	e4b1,147x37,0,0,22
+window	remote	8	0	:	e4b2,147x37,0,0,23
+window	remote	9	0	:	e4b3,147x37,0,0,24
+window	remote	10	0	:	e4b4,147x37,0,0,25
+window	remote	11	0	:	e4b5,147x37,0,0,26
+state	local	

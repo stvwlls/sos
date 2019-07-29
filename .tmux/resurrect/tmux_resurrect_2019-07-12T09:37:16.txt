@@ -1,0 +1,41 @@
+pane	0	0	:bash	1	:*	0	:/home/steve	1	bash	:
+pane	local	0	:scratch	0	:	0	:/home/steve/downloads	1	bash	:
+pane	local	1	:scratch2	0	:	0	:/home/steve/downloads	1	bash	:
+pane	local	2	:xbps	0	:	0	:/home/steve	1	bash	:
+pane	local	3	:clients	1	:*	0	:/home/steve/clients/gsb/GSB_2018/dockerize/nginx	1	bash	:
+pane	local	4	:clients2	0	:-	0	:/home/steve	1	bash	:
+pane	local	5	:clients3	0	:	0	:/home/steve	1	bash	:
+pane	local	6	:nas	0	:	0	:/home/steve/downloads	1	bash	:
+pane	local	7	:nas2	0	:	0	:/home/steve	1	bash	:
+pane	remote	0	:dev	0	:	0	:/home/steve	1	bash	:
+pane	remote	1	:dev2	0	:	0	:/home/steve	1	bash	:
+pane	remote	2	:dev3	0	:	0	:/home/steve	1	bash	:
+pane	remote	3	:spock	0	:	0	:/home/steve	1	bash	:
+pane	remote	4	:bowie	1	:*	0	:/home/steve	1	ssh	:ssh woolibec@bowie.ibeccreative.com
+pane	remote	5	:gsb	0	:-	0	:/home/steve	1	bash	:
+pane	remote	6	:linode	0	:	0	:/home/steve	1	bash	:
+pane	remote	7	:linodedb	0	:	0	:/home/steve	1	bash	:
+pane	remote	8	:root	0	:	0	:/home/steve	1	bash	:
+pane	remote	9	:root2	0	:	0	:/home/steve	1	bash	:
+pane	remote	10	:ssh	0	:	0	:/home/steve	1	bash	:
+window	0	0	1	:*	c8fd,147x37,0,0,0
+window	local	0	0	:	c8fe,147x37,0,0,1
+window	local	1	0	:	c8ff,147x37,0,0,2
+window	local	2	0	:	c900,147x37,0,0,3
+window	local	3	1	:*	c901,147x37,0,0,4
+window	local	4	0	:-	c902,147x37,0,0,5
+window	local	5	0	:	c903,147x37,0,0,6
+window	local	6	0	:	c904,147x37,0,0,7
+window	local	7	0	:	c905,147x37,0,0,8
+window	remote	0	0	:	c906,147x37,0,0,9
+window	remote	1	0	:	64af,147x37,0,0,10
+window	remote	2	0	:	64b0,147x37,0,0,11
+window	remote	3	0	:	64b1,147x37,0,0,12
+window	remote	4	1	:*	64b2,147x37,0,0,13
+window	remote	5	0	:-	64b3,147x37,0,0,14
+window	remote	6	0	:	64b4,147x37,0,0,15
+window	remote	7	0	:	64b5,147x37,0,0,16
+window	remote	8	0	:	64b6,147x37,0,0,17
+window	remote	9	0	:	64b7,147x37,0,0,18
+window	remote	10	0	:	64b8,147x37,0,0,19
+state	remote	local

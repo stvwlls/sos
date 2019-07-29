@@ -178,7 +178,7 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <!--<keybind key="W-A-Left">-->
+    <!--<keybind key="C-A-Left">-->
     <keybind key="W-Prior">
       <action name="GoToDesktop">
         <to>left</to>
@@ -888,11 +888,13 @@
           <menu>client-list-combined-menu</menu>
         </action>
       </mousebind>
+      <!--
       <mousebind button="Right" action="Press">
         <action name="ShowMenu">
           <menu>root-menu</menu>
         </action>
       </mousebind>
+      -->
     </context>
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
@@ -1039,7 +1041,7 @@
 -->
   <application name="Navigator">
     <decor>no</decor>
-    <maximized>true</maximized>
+    <!--<maximized>true</maximized>-->
   </application>
   <application title="Mozilla Thunderbird">
     <decor>no</decor>

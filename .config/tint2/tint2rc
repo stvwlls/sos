@@ -60,7 +60,7 @@ border_color = #888888 20
 panel_monitor = all
 panel_position = top center horizontal
 #panel_items = TSBC
-panel_items = TSBC
+panel_items = TSB
 panel_size = 100% 40
 panel_margin = 0 -1
 panel_padding = 0 0
@@ -115,25 +115,29 @@ task_iconified_font_color = #d8d8d8 60
 font_shadow = 0
 
 # Launcher
-launcher_padding = 8 4 4
-launcher_background_id = 0
-launcher_icon_size = 24
-# Specify icon theme names with launcher_icon_theme. 
-# if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
-launcher_icon_theme = gnome-colors-statler
-# Each launcher_item_app must be a full path to a .desktop file
-launcher_item_app = /usr/share/applications/terminator.desktop
-launcher_item_app = /usr/share/applications/xfce4-file-manager.desktop
-launcher_item_app = /usr/share/applications/gedit.desktop
-launcher_item_app = /usr/share/applications/iceweasel.desktop
+#launcher_padding = 8 4 4
+#launcher_background_id = 0
+#launcher_icon_size = 24
+## Specify icon theme names with launcher_icon_theme. 
+## if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
+#launcher_icon_theme = gnome-colors-statler
+## Each launcher_item_app must be a full path to a .desktop file
+#launcher_item_app = /usr/share/applications/terminator.desktop
+#launcher_item_app = /usr/share/applications/xfce4-file-manager.desktop
+#launcher_item_app = /usr/share/applications/gedit.desktop
+#launcher_item_app = /usr/share/applications/iceweasel.desktop
 
 # System Tray
 systray = 1
 systray_padding = 4 2 3
 systray_sort = right2left
-systray_background_id = 0
-systray_icon_size = 30
+systray_background_id = 5
+#systray_background_id = 0
+systray_icon_size = 24 
+#systray_icon_size = 30 
+#systray_icon_size = 0
 systray_icon_asb = 100 0 0
+systray_name_filter = wicd
 
 # Clock
 time1_format = %H:%M

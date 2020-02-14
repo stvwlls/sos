@@ -29,7 +29,7 @@ URxvt.scrollBar: false
 URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
-!URxvt.internalBorder: 10 
+URxvt.internalBorder: 10 
 
 ! drop in Solarized colorscheme for Xresources/Xdefaults
 

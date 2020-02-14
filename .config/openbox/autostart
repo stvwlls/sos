@@ -28,6 +28,8 @@ xset dpms 0 0 0 && xset s noblank  && xset s off
 # All ports readied for external monitors
 xrandr --output DP1 --auto --output DP2 --auto --output VIRTUAL1 --auto
 
+#xscreensaver -no-splash &
+
 ## GNOME PolicyKit and Keyring
 #eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 #eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)

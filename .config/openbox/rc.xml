@@ -118,14 +118,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>5</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
-      <name>5</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -433,7 +432,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Firefox</name>
+          <name>Browser</name>
         </startupnotify>
         <command>firefox</command>
       </action>
@@ -474,7 +473,7 @@
           <enabled>true</enabled>
           <name>Launcher</name>
         </startupnotify>
-        <command>rofi -show run</command>
+        <command>gmrun</command>
       </action>
     </keybind>
     <keybind key="W-C">
@@ -493,24 +492,6 @@
           <name>Music Player</name>
         </startupnotify>
         <execute>urxvtc -e mocp -T monochrome</execute>
-      </action>
-    </keybind>
-    <keybind key="W-E">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Email client</name>
-        </startupnotify>
-        <execute>urxvtc -e mutt</execute>
-      </action>
-    </keybind>
-    <keybind key="W-P">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Chat client</name>
-        </startupnotify>
-        <execute>pidgin</execute>
       </action>
     </keybind>
     <keybind key="Print">
@@ -542,6 +523,24 @@
           <name>ALSA Mixer</name>
         </startupnotify>
         <execute>urxvtc -e alsamixer</execute>
+      </action>
+    </keybind>
+    <keybind key="W-E">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>External displays</name>
+        </startupnotify>
+        <execute>xrandr --output DP-2 --auto --output eDP-1 --off</execute>
+      </action>
+    </keybind>
+    <keybind key="W-L">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Local display on</name>
+        </startupnotify>
+        <execute>xrandr --output eDP-1 --auto --output DP-2 --off</execute>
       </action>
     </keybind>
     <keybind key="XF86Sleep">
@@ -578,6 +577,34 @@
           <name>BrightnessFull</name>
         </startupnotify>
         <execute>xbacklight -set 100</execute>
+      </action>
+    </keybind>
+    <!-- Volume controls -->
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>LowerVolume</name>
+        </startupnotify>
+        <execute>amixer set Master 5%-</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>RaiseVolume</name>
+        </startupnotify>
+        <execute>amixer set Master 5%+</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Mute</name>
+        </startupnotify>
+        <execute>amixer set Master toggle</execute>
       </action>
     </keybind>
   </keyboard>
@@ -1064,7 +1091,7 @@
   </application>
   <application name="Pidgin">
     <desktop>5</desktop>
-    <decor>no</decor>
+    <!--<decor>no</decor>-->
     <maximized>vertical</maximized>
     <position>
       <x>3/4</x>
@@ -1078,9 +1105,11 @@
       -->
     </size>
   </application>
+  <!--
   <application name="gimp*">
     <desktop>4</desktop>
   </application>
+  -->
   <application name="galculator">
     <layer>above</layer>
     <position>
